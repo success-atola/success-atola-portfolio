@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Atola | Customer Success & Support Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #722c48;
+            --primary-dark: #5a1f38;
+            --secondary: #1f2937;
+            --accent: #a8305e;
+            --light: #f9fafb;
+            --text-dark: #111827;
+            --text-light: #6b7280;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: white;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-header {
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-header img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover {
+            color: #f0f0f0;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(114, 44, 72, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(114, 44, 72, 0.05), rgba(168, 48, 94, 0.05));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 600px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: 1200px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .hero-text .highlight {
+            color: var(--primary);
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .badge-item {
+            background: white;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .role-badge {
+            background: white;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .role-badge:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(114, 44, 72, 0.2);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(114, 44, 72, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid var(--primary);
+            cursor: pointer;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background: var(--light);
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(114, 44, 72, 0.2);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(114, 44, 72, 0.1), rgba(168, 48, 94, 0.1));
+            border-radius: 15px;
+            border: 1px solid rgba(114, 44, 72, 0.2);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 4rem 2rem;
+            background: var(--light);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(114, 44, 72, 0.2);
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .video-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .video-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(114, 44, 72, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+        }
+
+        /* Impact Section */
+        .impact-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(114, 44, 72, 0.05), rgba(168, 48, 94, 0.05));
+        }
+
+        .impact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .impact-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+            text-align: center;
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .impact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .impact-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .impact-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 2rem;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+        }
+
+        .section-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            background: var(--light);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .experience-item h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-meta {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .experience-item p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .experience-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .experience-item li {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .experience-item li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, rgba(114, 44, 72, 0.1), rgba(168, 48, 94, 0.1));
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 1rem;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Tools Section */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .tool-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid rgba(114, 44, 72, 0.1);
+            transition: all 0.3s;
+        }
+
+        .tool-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px rgba(114, 44, 72, 0.1);
+        }
+
+        .tool-card h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .tool-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .tool-card img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        /* Case Studies Section */
+        .case-study {
+            background: var(--light);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--accent);
+        }
+
+        .case-study h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .case-study-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .meta-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .meta-value {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .case-study p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* Project Cards */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(114, 44, 72, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(114, 44, 72, 0.1);
+        }
+
+        .project-card:hover {
+            box-shadow: 0 8px 25px rgba(114, 44, 72, 0.15);
+            transform: translateY(-5px);
+        }
+
+        /* Testimonials Grid */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(114, 44, 72, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(114, 44, 72, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonial-card:hover {
+            box-shadow: 0 8px 25px rgba(114, 44, 72, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .testimonial-quote {
+            flex: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-quote p {
+            color: var(--text-dark);
+            line-height: 1.8;
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            border-top: 2px solid rgba(114, 44, 72, 0.1);
+            padding-top: 1rem;
+        }
+
+        /* FAQs Section */
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            border: 1px solid rgba(114, 44, 72, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 15px rgba(114, 44, 72, 0.08);
+            border-color: rgba(114, 44, 72, 0.2);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(114, 44, 72, 0.02);
+            color: var(--accent);
+        }
+
+        .faq-question.active {
+            background: rgba(114, 44, 72, 0.05);
+            color: var(--accent);
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            color: var(--primary);
+        }
+
+        .faq-question.active .faq-toggle {
+            transform: rotate(180deg);
+            color: var(--accent);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: rgba(114, 44, 72, 0.02);
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+
+        .faq-answer p {
+            color: var(--text-dark);
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        /* Education Section */
+        #education {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .education-card {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(114, 44, 72, 0.05), rgba(168, 48, 94, 0.05));
+            border-radius: 15px;
+            border: 1px solid rgba(114, 44, 72, 0.1);
+        }
+
+        .education-icon {
+            font-size: 3rem;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .education-info h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .education-info .institution {
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .education-info .description {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        /* Certifications Section */
+        #certifications {
+            padding: 4rem 2rem;
+            background: var(--light);
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cert-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(114, 44, 72, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(114, 44, 72, 0.15);
+        }
+
+        .cert-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .cert-card h3 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin: 1.5rem 1rem 0.5rem 1rem;
+        }
+
+        .cert-card p {
+            color: var(--text-light);
+            margin: 0 1rem 1.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-buttons a {
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .cta-buttons a:hover {
+            background: var(--light);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Alternating Backgrounds */
+        section:nth-child(odd) {
+            background: white;
+        }
+
+        section:nth-child(even) {
+            background: var(--light);
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                gap: 0.75rem;
+                font-size: 0.8rem;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+
+            .experience-item h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-header">
+                <img src="public/images/header.webp" alt="Success Atola">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contact" class="cta-button">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge-list">
+                      <div class="role-badge">Customer Success Professional</div>
+                <div class="role-badge">Customer Support Manager</div>
+                <div class="role-badge">Technical Support</div>
+                <div class="role-badge">Customer Service Professional</div>
+                <div class="role-badge">Account Manager</div>
+                <div class="role-badge">Appointment Setting</div>
+                <div class="role-badge">Cold Calling</div>
+                <div class="role-badge">Sales Development Representative</div>
+                </div>
+                <h1>Proven Results. Driving Retention & <span class="highlight">Satisfaction Remotely</span></h1>
+                <p>Customer Success Manager with 4+ years of experience driving measurable impact across US, UK, and Canada timezones. Promoted to Team Lead in 4 months. 95% CSAT. 500+ monthly conversions. 45% increase in conversion rates.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">I am The Next Team Member You Are Looking For</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="public/images/hero-enhanced.png" alt="Success Atola">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Customer Satisfaction</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Monthly Conversions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">45%</div>
+                <div class="stat-label">Conversion Rate Growth</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I'm a Customer Success professional with a proven track record of driving measurable business outcomes. With 4+ years of remote work experience across US, UK, and Canada timezones, I've consistently delivered results that exceed expectations.</p>
+                <p>My expertise spans Customer Success, Support, Technical Support, and Customer Service. I'm not just about completing tasks—I focus on outcomes: increasing retention, improving satisfaction, and driving revenue growth.</p>
+                <p>I was promoted to Team Lead in just 4 months, demonstrating my ability to make an immediate impact and lead teams effectively. I'm ready to bring this same energy and results-driven mindset to your organization.</p>
+            </div>
+            <div class="about-image">
+                <img src="public/images/profile-enhanced.png" alt="Success Atola Professional Portrait">
+            </div>
+        </div>
+    </section>
+
+    <!-- Introductory Video Section -->
+    <section class="video-section" id="video">
+        <div class="video-content">
+            <h2>My Introduction</h2>
+            <p style="color: var(--text-light); margin-bottom: 2rem;">Watch me introduce myself and share my professional journey</p>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto; border-radius: 10px; box-shadow: 0 10px 30px rgba(114, 44, 72, 0.2);">
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 10px;" src="https://www.loom.com/embed/8cb71b7681814e2bb7b8e145356a3a16" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Measurable Impact Section -->
+    <section class="impact-section" id="impact">
+        <div class="impact-content">
+            <h2>Measurable Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <h3>1,000+ Clients Supported</h3>
+                    <p>Built and managed relationships with over 1,000 customers across multiple continents, ensuring consistent satisfaction and retention.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>30% Reduction in Follow-ups</h3>
+                    <p>Implemented streamlined processes that cut customer follow-up requests by 30%, improving efficiency and customer experience.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>45% Conversion Rate Growth</h3>
+                    <p>Increased conversion rates by 45% through strategic customer engagement and targeted support interventions.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>20% Sales Target Overage</h3>
+                    <p>Exceeded sales targets by 20%, demonstrating ability to drive revenue while maintaining customer satisfaction.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>40% Retention Rate Improvement</h3>
+                    <p>Improved customer retention rates by 40% through proactive engagement and exceptional service delivery.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>Promoted to Team Lead in 4 Months</h3>
+                    <p>Recognized for exceptional performance and promoted to Team Lead position, leading a team of support specialists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience">
+        <div class="section-content">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Customer Success Manager / Admissions and Enrollment Officer</h3>
+                <div class="experience-meta">IIAR | September 2023 - October 2025</div>
+                <p>Led customer success initiatives and managed admissions/enrollment processes for a growing organization. Promoted to Team Lead within 4 months, demonstrating exceptional performance and leadership capability.</p>
+                <ul>
+                    <li>Built and managed relationships with 1,000+ customers across multiple continents</li>
+                    <li>Reduced customer follow-up requests by 30% through process optimization</li>
+                    <li>Increased conversion rates by 45% through strategic engagement</li>
+                    <li>Exceeded sales targets by 20% consistently</li>
+                    <li>Improved customer retention rates by 40%</li>
+                    <li>Promoted to Team Lead in 4 months</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Technical Support Officer</h3>
+                <div class="experience-meta">Tozhine | January 2021 - July 2023</div>
+                <p>Provided comprehensive technical support and customer service across multiple time zones. Managed complex customer issues and maintained 95% customer satisfaction rating.</p>
+                <ul>
+                    <li>Maintained 95% customer satisfaction rating</li>
+                    <li>Processed 500+ monthly customer conversions</li>
+                    <li>Resolved technical issues with 98% first-contact resolution rate</li>
+                    <li>Trained new team members on support best practices</li>
+                    <li>Managed customer escalations effectively</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Sales Development Representative</h3>
+                <div class="experience-meta">Veristzon Global Holdings | [Dates]</div>
+                <p>Generated qualified leads and managed sales pipeline for B2B SaaS organization. Focused on building relationships and driving revenue growth.</p>
+                <ul>
+                    <li>Generated 150+ qualified leads monthly ($500K+ pipeline)</li>
+                    <li>Achieved 35% conversion rate (15% above team average)</li>
+                    <li>Built relationships with 200+ decision-makers</li>
+                    <li>Maintained 90% handoff conversion rate to sales team</li>
+                    <li>Improved response rates by 40%</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Customer Success</div>
+                <div class="skill-tag">Customer Support</div>
+                <div class="skill-tag">Technical Support</div>
+                <div class="skill-tag">Customer Service</div>
+                <div class="skill-tag">CRM Management</div>
+                <div class="skill-tag">Remote Operations</div>
+                <div class="skill-tag">Customer Retention</div>
+                <div class="skill-tag">Sales Development</div>
+                <div class="skill-tag">Team Leadership</div>
+                <div class="skill-tag">Salesforce</div>
+                <div class="skill-tag">HubSpot</div>
+                <div class="skill-tag">Zendesk</div>
+                <div class="skill-tag">Zoho CRM</div>
+                <div class="skill-tag">Google Suite</div>
+                <div class="skill-tag">Microsoft Teams</div>
+                <div class="skill-tag">Slack</div>
+                <div class="skill-tag">Notion</div>
+                <div class="skill-tag">Data Analysis</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Platforms Section -->
+    <section id="tools">
+        <div class="section-content">
+            <h2>Tools & Platforms I Master</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>HubSpot</h3>
+                    <p>Contact management, email automation, and customer relationship tracking</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Zendesk</h3>
+                    <p>Ticketing system, support management, and customer service automation</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Zoho CRM</h3>
+                    <p>Sales pipeline management, analytics, and customer data organization</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Salesforce</h3>
+                    <p>Enterprise CRM, sales forecasting, and customer relationship management</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Slack</h3>
+                    <p>Team communication, collaboration, and workflow integration</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Notion</h3>
+                    <p>Project management, documentation, and team knowledge base</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Microsoft Teams</h3>
+                    <p>Video conferencing, team collaboration, and enterprise communication</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Google Suite</h3>
+                    <p>Docs, Sheets, Calendar, and collaborative productivity tools</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Aircall</h3>
+                    <p>Cloud-based phone system, call management, and customer communication</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Primo Dialer</h3>
+                    <p>Predictive dialing, call automation, and outbound call management</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Convoso</h3>
+                    <p>Cloud-based dialing platform, lead management, and sales automation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies">
+        <div class="section-content">
+            <h2>Case Studies</h2>
+            
+            <div class="case-study">
+                <h3>Turning a Trust-Concerned Inbound Prospect into a Confident Paying Client</h3>
+                <div class="case-study-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Role</div>
+                        <div class="meta-value">Sales Development Representative</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Challenge</div>
+                        <div class="meta-value">Trust & Payment Hesitation</div>
+                    </div>
+                </div>
+                
+                <p><strong>Situation:</strong> A prospect from Ghana expressed strong interest but hesitated due to past negative experiences with online payments. She requested physical office or deferred payment options, creating risk of lost conversion.</p>
+                
+                <p><strong>What I Did:</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Responded via email with reassurance, not pressure</li>
+                    <li>Offered live verification options (Google Meet platform walkthrough)</li>
+                    <li>Provided clear breakdown of deliverables post-payment</li>
+                    <li>Shared structured onboarding process to demonstrate legitimacy</li>
+                    <li>Used HubSpot CRM to track engagement stage and schedule follow-ups</li>
+                    <li>Moved conversation to Aircall for deeper engagement</li>
+                </ul>
+                
+                <div style="background: white; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; border: 1px solid rgba(114, 44, 72, 0.2); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Skills Applied:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li>Empathy & Emotional Intelligence</li>
+                            <li>Objection Handling</li>
+                            <li>Persuasive Communication</li>
+                            <li>Trust Building</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Tools Used:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li>HubSpot</li>
+                            <li>Email</li>
+                            <li>Google Meet</li>
+                            <li>Aircall</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Results & Impact:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li><strong>1 prospect converted</strong> from hesitation to confidence</li>
+                            <li><strong>100% conversion rate</strong> on this high-risk prospect</li>
+                            <li><strong>Structured payment plan agreed</strong> - client moved forward</li>
+                            <li><strong>Successfully onboarded</strong> with full engagement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study">
+                <h3>De-escalating an Angry Outbound Client and Recovered Revenue</h3>
+                <div class="case-study-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Role</div>
+                        <div class="meta-value">Customer Support Specialist</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Challenge</div>
+                        <div class="meta-value">Angry Client Escalation</div>
+                    </div>
+                </div>
+                
+                <p><strong>Situation:</strong> A client became frustrated after delayed access to a paid program and escalated aggressively across multiple channels. Risked refund request, negative reputation, and lost revenue.</p>
+                
+                <p><strong>What I Did:</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Immediately logged the issue in Zendesk for tracking</li>
+                    <li>Initiated a direct call using Primo Dialer to de-escalate faster</li>
+                    <li>Coordinated internally via Slack for immediate resolution</li>
+                    <li>Provided clear, time-bound updates, and stayed accountable until resolution</li>
+                    <li>Sent confirmation via email</li>
+                    <li>Scheduled a Google Meet onboarding session to rebuild confidence</li>
+                </ul>
+                
+                    <div style="background: white; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; border: 1px solid rgba(114, 44, 72, 0.2); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Skills Applied:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li>Conflict Resolution</li>
+                            <li>Empathy</li>
+                            <li>Accountability</li>
+                            <li>Problem Solving</li>
+                            <li>Persuasive Communication</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Tools Used:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li>Zendesk</li>
+                            <li>Primo Dialer</li>
+                            <li>Slack</li>
+                            <li>Email</li>
+                            <li>Google Meet</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Results & Impact:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li><strong>Client de-escalated within first interaction</strong> - resolved conflict immediately</li>
+                            <li><strong>$0 refunds issued</strong> - recovered full revenue</li>
+                            <li><strong>2 referrals generated within 1 week</strong> - client became advocate</li>
+                            <li><strong>100% retention post-resolution</strong> - strong relationship maintained</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study">
+                <h3>Driving Product Adoption for a Non-Technical Client Through Structured Onboarding</h3>
+                <div class="case-study-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Role</div>
+                        <div class="meta-value">Onboarding Specialist</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Challenge</div>
+                        <div class="meta-value">Low Technical Know-How</div>
+                    </div>
+                </div>
+                
+                <p><strong>Situation:</strong> A newly registered client struggled to access and navigate the learning platform due to low technical knowledge. Couldn't log in, locate modules, or progress through system - at high risk of early drop-off.</p>
+                
+                <p><strong>What I Did:</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Scheduled a Google Meet session (screen sharing) to guide them step-by-step</li>
+                    <li>Broke down instructions into simple, non-technical language</li>
+                    <li>Allowed the client to perform actions while I guided in real time</li>
+                    <li>Sent a follow-up email via Google Workspace with clear steps and screenshots</li>
+                    <li>Logged interaction and progress in HubSpot CRM for continuity</li>
+                </ul>
+                
+                <div style="background: white; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; border: 1px solid rgba(114, 44, 72, 0.2); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Skills Applied:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li>Technical Troubleshooting</li>
+                            <li>User Onboarding</li>
+                            <li>Empathy</li>
+                            <li>Clear Communication</li>
+                            <li>Real-time Problem Solving</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Tools Used:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li>Google Meet</li>
+                            <li>Gmail</li>
+                            <li>HubSpot CRM</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Results & Impact:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li><strong>100% platform adoption</strong> - client successfully navigated independently</li>
+                            <li><strong>Zero support requests</strong> - no repeated issues</li>
+                            <li><strong>Zero drop-off</strong> - client remained engaged</li>
+                            <li><strong>Reduced support load</strong> - efficient onboarding prevented future tickets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study">
+                <h3>Converting an Overwhelmed and Hesitant Prospect Using Structured Follow-Up</h3>
+                <div class="case-study-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Role</div>
+                        <div class="meta-value">Customer Success Manager</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Challenge</div>
+                        <div class="meta-value">Decision Hesitation</div>
+                    </div>
+                </div>
+                
+                <p><strong>Situation:</strong> A prospect showed strong interest but kept delaying decision due to uncertainty and competing priorities. Risk of lost conversion opportunity.</p>
+                
+                <p><strong>What I Did:</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Tracked lead in Zoho CRM</li>
+                    <li>Used Convoso to initiate a structured call</li>
+                    <li>Followed up with concise, value-driven emails</li>
+                    <li>Reinforced key benefits based on the client's specific goal</li>
+                    <li>Avoided overloading them and instead guided them step-by-step toward decision clarity</li>
+                </ul>
+                    <div style="background: white; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; border: 1px solid rgba(114, 44, 72, 0.2); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Skills Applied:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li>Persuasive Communication</li>
+                            <li>Multi-Tasking Abilities</li>
+                            <li>Upselling & Cross-Selling</li>
+                            <li>Time Management</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Tools Used:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li>Zoho CRM</li>
+                            <li>Convoso</li>
+                            <li>Email</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; font-size: 0.95rem;">Results & Impact:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.4; margin: 0;">
+                            <li><strong>Converted within 48 hours</strong> - fast decision closure</li>
+                            <li><strong>100% payment secured</strong> - full commitment from prospect</li>
+                            <li><strong>1 prospect converted</strong> from hesitation to paying customer</li>
+                            <li><strong>Client remained engaged post-sale</strong> - strong onboarding foundation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-content">
+            <h2>Featured Projects</h2>
+            <div class="project-container">
+                <div class="project-main">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;">Automating Customer Outreach & Follow-Up at Scale</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1.5rem; line-height: 1.8;">I built a structured email automation system to handle large-scale customer outreach while maintaining personalization and delivery control to eliminate manual sending, reduce errors, and improve follow-up consistency across 2000+ prospects.</p>
+                </div>
+                
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h4 style="color: var(--primary); margin-bottom: 0.75rem; font-weight: 600;">Problem</h4>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-light);">
+                            <li>Manual email outreach was time-consuming</li>
+                            <li>Prone to duplication and errors</li>
+                            <li>Difficult to track across hundreds of contacts</li>
+                            <li>Inefficient for follow-ups</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h4 style="color: var(--primary); margin-bottom: 0.75rem; font-weight: 600;">Solution</h4>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-light);">
+                            <li>Google Sheets for contact management</li>
+                            <li>Google Apps Script for automation logic</li>
+                            <li>Google Docs for dynamic email content</li>
+                            <li>Gmail integration for sending</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h4 style="color: var(--primary); margin-bottom: 0.75rem; font-weight: 600;">My Role</h4>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-light);">
+                            <li>Designed the system architecture</li>
+                            <li>Wrote and implemented Apps Script logic</li>
+                            <li>Structured data workflow in Google Sheets</li>
+                            <li>Tested and optimized delivery performance</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h4 style="color: var(--primary); margin-bottom: 0.75rem; font-weight: 600;">Tools Used</h4>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-light);">
+                            <li>Google Sheets</li>
+                            <li>Google Apps Script</li>
+                            <li>Gmail</li>
+                            <li>Google Docs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h4 style="color: var(--primary); margin-bottom: 0.75rem; font-weight: 600;">Skills Applied</h4>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-light);">
+                            <li>Process automation</li>
+                            <li>Problem-solving</li>
+                            <li>Attention to detail</li>
+                            <li>Email marketing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h4 style="color: var(--primary); margin-bottom: 0.75rem; font-weight: 600;">Impact</h4>
+                        <ul style="list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-light);">
+                            <li><strong>900+ customers</strong> managed</li>
+                            <li><strong>100% elimination</strong> of duplicate emails</li>
+                            <li><strong>70%+ reduction</strong> in manual workload</li>
+                            <li><strong>Improved consistency</strong> in follow-ups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="section-content">
+            <h2>Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <p>"Working with Success was a refreshing experience. She is incredibly polite, professional, and intentional with her communication. Every message she sent was clear and engaging; I always found myself reading through because of how well she presents information. Her approach to marketing and client engagement is truly impressive."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p style="font-weight: 600; color: var(--primary);">Madam Rebecca</p>
+                        <p style="font-size: 0.85rem; color: var(--text-light);">Lawyer & Midwife, South Africa</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <p>"Success is very patient and easy to communicate with. She takes her time to explain things clearly and makes you feel comfortable throughout the process. Her sincerity stands out, and you can tell she genuinely wants to help. The support I received was excellent."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p style="font-weight: 600; color: var(--primary);">Ibrahim Abba</p>
+                        <p style="font-size: 0.85rem; color: var(--text-light);">Lecturer, International University Of Debrecen, Hungary</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <p>"What stood out the most was her consistency and professionalism. She doesn't just respond, she follows up, ensures you understand, and stays engaged until everything is resolved. That level of support is rare."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p style="font-weight: 600; color: var(--primary);">Sokenu Peter</p>
+                        <p style="font-size: 0.85rem; color: var(--text-light);">Business Executive, Mishel Homes</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <p>"I appreciated how transparent and responsive she was. You always know what's happening, and you don't feel left in the dark. It made the entire experience smooth and stress-free."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p style="font-weight: 600; color: var(--primary);">Dr Ebenezer Godwin</p>
+                        <p style="font-size: 0.85rem; color: var(--text-light);">PhD Student, University of PortHarcourt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs">
+        <div class="section-content">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can you handle high-volume customer interactions without dropping quality?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. I've consistently managed 50–100+ daily conversations across chat, email, and calls while maintaining 95%+ customer satisfaction (CSAT). I work with structured workflows that ensure speed, clarity, and consistency at scale.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you have experience supporting international customers?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. I've worked with customers across Nigeria, Ghana, Kenya, and South Africa, United Kingdom, and the United States adapting communication to different needs and expectations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What tools and systems are you experienced with?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I work with HubSpot and Zoho (CRM), Zendesk (ticketing), and dialers like Aircall, Convoso, and Primo Dialer. I also use Google Workspace, Slack, and Microsoft Teams for communication and collaboration.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How do you handle difficult or escalated customers?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I focus on understanding the issue first, acknowledging the concern, and taking ownership. I communicate clearly to my clients, provide timelines, and follow through until the issue is fully resolved. This approach has helped me retain customers and prevent churn in critical situations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How do you contribute to customer retention and engagement?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I work proactively through follow-ups, clear onboarding, and consistent communication. I ensure customers don't feel lost after purchase and remain engaged throughout their journey. I've helped improve retention and reduce drop-offs, while keeping customers actively engaged.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What do you bring to the table?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I bring a combination of customer support, data analysis and operational thinking. I have proven ability to improve conversion (up to 45%) and retention. I have strong system-building skills (e.g., automating outreach for 900+ users) and I have the ability to balance customer experience with business outcomes. I am a team player.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Why should we hire you?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You don't just need support for your customers. You need someone that buys into your vision and mission statement and someone who can elevate your customers experience. I bring: Consistency, Ownership, Dedication, Structure and Impact that contributes to retention and revenue. If you're looking for someone who can support customers, improve processes, and contribute to growth, I'm a strong fit.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are you comfortable working remotely and across time zones?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. I'm experienced working remotely and supporting customers across US, UK, and Canada time zones, with clear communication and fast response turnaround.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are you open to full-time remote roles?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. I'm open to full-time remote Customer Success, Customer Support and Sales Development roles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <div class="education-card">
+                <div class="education-icon">🎓</div>
+                <div class="education-info">
+                    <h3>Bachelor of Technology in Statistics</h3>
+                    <p class="institution">Federal University of Technology, Minna</p>
+                    <p class="description">Comprehensive training in statistical analysis, data interpretation, and quantitative research methods. This foundation supports my ability to analyze customer data, identify trends, and make data-driven decisions in customer success and support operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section id="certifications">
+        <div class="section-content">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <img src="/public/images/cert-alx.png" alt="ALX Virtual Assistant Certification">
+                    <h3>Virtual Assistant Certification</h3>
+                    <p>ALX</p>
+                </div>
+                <div class="cert-card">
+                    <img src="/public/images/cert-dakins.png" alt="Dakins Customer Service Certification">
+                    <h3>Customer Service Certification</h3>
+                    <p>Dakins</p>
+                </div>
+                <div class="cert-card">
+                    <img src="/public/images/cert-tsg.webp" alt="TSG Academy Sales Course Certificate">
+                    <h3>Online Sales Bootcamp</h3>
+                    <p>TSG Academy (The Sales Guru)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="cta-content">
+            <h2>Your Next Solution to Exceptional Customer Experience</h2>
+            <p>I bring 4+ years of proven remote work experience, delivering measurable results across Customer Success, Support, and Sales Development. I'm ready to contribute immediately to your team with the skills, reliability, and customer-first mindset that drives business growth.</p>
+            <div class="cta-buttons">
+                <a href="mailto:successatola@gmail.com">Contact Me Via Email</a>
+                <a href="https://wa.me/message/Q2KJASJ7FTBKN1" target="_blank">Contact Me Via WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Success Atola. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleFAQ(button) {
+            const faqItem = button.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const isActive = button.classList.contains('active');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-question').forEach(q => {
+                if (q !== button) {
+                    q.classList.remove('active');
+                    q.parentElement.querySelector('.faq-answer').classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            button.classList.toggle('active');
+            answer.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
