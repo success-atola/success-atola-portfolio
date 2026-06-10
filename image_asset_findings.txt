@@ -1,0 +1,51 @@
+Image asset investigation findings on 2026-06-09:
+
+1. /home/ubuntu/upload/LinkedinHeader.webp
+   - Matches the top header/banner image used in the portfolio navigation area.
+   - Already copied to public/images/header.webp.
+
+2. /home/ubuntu/upload/VirtualAssistantCertificationCourse.png
+   - Matches the ALX Virtual Assistant certification image.
+   - Copied to public/images/cert-alx.png.
+
+3. /home/ubuntu/upload/SuccessAtolaOSBTrainingCertificate.webp
+   - Candidate certification image.
+   - Copied to public/images/cert-tsg.webp pending visual confirmation.
+
+4. /home/ubuntu/upload/Thisone.webp
+   - Candidate certification image.
+   - Copied to public/images/cert-dakins.png pending visual confirmation.
+
+5. /home/ubuntu/upload/pasted_file_2GSrZ4_image.png
+   - Screenshot of portfolio navbar/header, not a reusable source image.
+
+6. /home/ubuntu/upload/pasted_file_0PQTGV_image.png
+   - Screenshot of terminal warning, not a reusable source image.
+
+7. /home/ubuntu/upload/pasted_file_VuWzSA_image.png
+   - Screenshot of GitHub page, not a reusable source image.
+
+8. /home/ubuntu/upload/pasted_file_VGpPyI_image.png
+   - Screenshot of Netlify analytics page, not a reusable source image.
+
+9. /home/ubuntu/upload/pasted_file_WuN6ov_image.png
+   - Screenshot of portfolio navbar/header, not a reusable source image.
+
+10. /home/ubuntu/upload/pasted_file_7q8c5A_image.png
+   - Screenshot of portfolio content section, not a reusable source image.
+
+11. /home/ubuntu/upload/pasted_file_A7etqT_image.png
+   - Screenshot of GitHub email, not a reusable source image.
+
+12. /home/ubuntu/upload/pasted_file_Sa6Ecr_image.png
+   - Screenshot of portfolio navbar/header, not a reusable source image.
+
+13. /home/ubuntu/upload/pasted_file_dB0nHP_image.png
+   - Screenshot of portfolio case-study content, not a reusable source image.
+
+14. /home/ubuntu/upload/pasted_file_X6UwzG_image.png
+   - Screenshot of portfolio hero area, not a reusable source image.
+
+Open issue:
+- The files currently referenced by index.html as public/images/hero-enhanced.png and public/images/profile-enhanced.png have not yet been located in the repository or clearly identified in the upload directory.
+- Need to inspect project HTML/CSS to determine how these files are used and whether existing uploaded assets can replace them safely.
